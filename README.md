@@ -12,7 +12,7 @@ This project applies the bisection algorithm, previously used for binary search 
 
 ## 🧠 What I Learned
 
-- **The bisection method for numerical computing** — Adapting the same halving logic from binary search to approximate a real number, by narrowing a `low/` interval until `mid² ≈ target`
+- **The bisection method for numerical computing** — Adapting the same halving logic from binary search to approximate a real number, by narrowing a `low/high` interval until `mid² ≈ target`
 - **Tolerance and convergence** — Using `high - low <= tolerance` as the stopping condition rather than an exact match, since floating point arithmetic means exact equality is rarely achievable
 - **Default parameters** — Defining `tolerance=1e-7` and `max_iterations=50` as sensible defaults that callers can override, making the function flexible without requiring arguments every time
 - **Scientific notation in Python** — Using `1e-7` to express `0.0000001` concisely, a common pattern in numerical and scientific Python code
