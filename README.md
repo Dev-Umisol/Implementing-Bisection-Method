@@ -17,7 +17,7 @@ This project applies the bisection algorithm, previously used for binary search 
 - **Default parameters** — Defining `tolerance=1e-7` and `max_iterations=50` as sensible defaults that callers can override, making the function flexible without requiring arguments every time
 - **Scientific notation in Python** — Using `1e-7` to express `0.0000001` concisely, a common pattern in numerical and scientific Python code
 - **Edge case handling before the main logic** — Catching negative numbers with raise `ValueError`, and returning early for `0` and `1` before entering the loop, keeping the core algorithm clean
-- **`max(1, square_root_num)` for the upper bound** — Recognising that for numbers between 0 and 1, the square root is larger than the number itself, so the upper bound needs to be at least 1 to avoid starting with a broken interval
+- **`max(1, square_root_num)` for the upper bound** — Recognizing that for numbers between 0 and 1, the square root is larger than the number itself, so the upper bound needs to be at least 1 to avoid starting with a broken interval
 
 ## 🛠️ Technologies Used
 | Tool/Library | Purpose |
